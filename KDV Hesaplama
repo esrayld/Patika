@@ -1,0 +1,22 @@
+package kdv.hesaplama;
+
+import java.util.Scanner;
+
+public class KDVHesaplama {
+   
+    public static void main(String[] args) {
+      
+    int para;
+        
+    Scanner keyboard=new Scanner(System.in);
+    
+      System.out.print("Para tutarını yazınız: "); 
+      para=keyboard.nextInt();
+     
+      double yeniKDV= para>0 && para<1000? 0.18: 0.08;
+      double KDV= para*yeniKDV;   
+      System.out.println("KDV'li tutar: "+(para+KDV));
+      System.out.println("KDV tutarı: "+ KDV);
+    }
+    
+}
