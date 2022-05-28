@@ -1,0 +1,32 @@
+package hipotenüs.hesaplama;
+import java.util.Scanner;
+
+public class AlanHesaplama {
+
+    public static void main(String[] args) {
+     double kenar1,kenar2,kenar3,u;
+     double alan;
+    
+    Scanner keyboard=new Scanner(System.in);
+    
+    System.out.print("İlk kenarın uzunluğunu girin.");
+    kenar1=keyboard.nextDouble();
+    
+    System.out.print("İkinci kenarın uzunluğunu girin.");
+    kenar2=keyboard.nextDouble();
+    
+    System.out.print("Üçüncü kenarın uzunluğunu girin.");
+    kenar3=keyboard.nextDouble();
+    
+    u=(kenar1+kenar2+kenar3)/2;
+    
+    alan= Math.sqrt(u*(u-kenar1)*(u-kenar2)*(u-kenar3));
+    System.out.println("Üçgenin alanı: " + alan);
+ 
+    
+    
+}
+
+    
+}
+
