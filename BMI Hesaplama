@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class VücutKitleİndeksiHesaplama {
+   
+public static void main(String[] args) {
+   
+  double kilo, boy, BMI;  
+ 
+ Scanner keyboard= new Scanner (System.in);
+    
+  System.out.print("Kilonuzu kg olarak giriniz: ");
+  kilo= keyboard.nextDouble();
+     
+  System.out.print("Boyunuzu m olarak giriniz. ");
+  boy= keyboard.nextDouble();
+     
+  BMI=kilo/(boy*boy); 		
+        
+  System.out.println("Vücut kitle indeksiniz: "+BMI); 
+    
+    }
+    
+}
