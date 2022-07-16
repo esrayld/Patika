@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class JavaApplication32 {
+
+    public static void main(String[] args) {
+ 
+       double r, alan,acı; 
+       double pi =3.14 ;
+        
+      Scanner keyboard= new Scanner(System.in);
+     
+        System.out.println("Açı:");
+        acı=keyboard.nextDouble();
+        System.out.println("Yarıçap:");
+        r=keyboard.nextDouble();
+        
+        alan= (pi*r*r*acı)/360;
+       
+        System.out.println("Alan: "+alan);
+        alan=keyboard.nextDouble();
