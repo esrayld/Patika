@@ -1,0 +1,57 @@
+package not.ortalaması.hesaplama;
+
+import java.util.Scanner;
+
+public class NotOrtalamasıHesaplama {
+   public static void main(String[] args) {
+   
+       int mat,fiz,kim,trk,mzk,ders=0,toplam=0;
+       
+      Scanner keyboard= new Scanner(System.in);
+      
+       System.out.print("Matematik Notu: ");
+       mat=keyboard.nextInt();
+       if(!(mat<0 || mat>100)){
+       ders++;
+       toplam+=mat;
+       }
+    
+       System.out.print("Fizik Notu: ");
+       fiz=keyboard.nextInt();
+        if(!(fiz<0 || fiz>100)){
+       ders++;
+       toplam+=fiz;
+       }
+
+       System.out.print("Kimya Notu: ");
+       kim=keyboard.nextInt();
+        if(!(kim<0 || kim>100)){
+       ders++;
+       toplam+=kim;
+       }
+
+       System.out.print("Türkçe Notu: ");
+       trk=keyboard.nextInt();
+        if(!(trk<0 || trk>100)){
+       ders++;
+       toplam+=trk;
+       }
+
+       System.out.print("Müzik Notu: ");
+       mzk=keyboard.nextInt();
+       if(!(mzk<0 || mzk>100)){
+       ders++;
+       toplam+=mzk;
+       }
+
+      
+       double ortalama= toplam/ders;
+        
+       System.out.println("Not ortalaması: "+ortalama);
+      
+       String sonuc = ortalama >=55? "Sınıfı Geçti":"Sınıfta Kaldı"; 
+       System.out.println(sonuc);  
+       
+    }
+    
+}
