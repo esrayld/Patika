@@ -38,4 +38,6 @@ public class HesapMakinesiProgramı {
                 }
                 break;
             default:System.out.println("Hatalı giriş yapıldı. Tekrar deneyiniz.");   
-            
+            }
+          }
+        }  
