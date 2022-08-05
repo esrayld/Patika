@@ -1,0 +1,37 @@
+package kullanıcı.girişi;
+
+import java.util.Scanner;
+
+public class KullanıcıGirişi {
+    
+    public static void main(String[] args) {
+      
+       String userName, password,newPassword,permission;
+       
+       Scanner inp= new Scanner(System.in);
+       
+        System.out.print("Kullanıcı adınız: ");
+        userName=inp.nextLine();
+        
+        System.out.print("Şifreniz: ");
+        password=inp.nextLine();
+        
+        if(userName.equals("Patika")&&password.equals("java123")){
+            System.out.println("Başarılı giriş!");
+        }
+        else{
+               System.out.println("Hatalı kullanıcı adı veya şifre girdiniz!");
+               System.out.println("Şifrenizi sıfırlamak ister misiniz? Evet/Hayır olarak giriniz.");
+               
+               permission=inp.nextLine();
+               if(permission.equalsIgnoreCase("evet") ){
+                   System.out.println("Yeni şifrenizi giriniz!");
+                   newPassword=inp.nextLine();
+                 
+                   if(newPassword.equals(password)|| newPassword.equals("java123")){
+                       System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz.");
+                    }
+                      else{
+                       System.out.println("Şifre oluşturuldu");
+                          }
+  }}}}
