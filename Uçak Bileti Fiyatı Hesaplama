@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class UçakBiletiHesaplama {
+
+    public static void main(String[] args) {
+       
+     int yas,km;
+     Double yolculukTipi;
+     double indirimliFiyat,toplamFiyat;
+     Scanner inp=new Scanner(System.in);
+     //Gidiş dönüş bilet indirimi, indirimli fiyat üzerinden %20 dir.
+     
+        
+        System.out.print("Mesafeyi km türünden giriniz :");
+        km=inp.nextInt();
+        
+        
+        System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ):");
+        yolculukTipi=inp.nextDouble();
+       
+        System.out.print("Yaşınızı giriniz :");
+        yas=inp.nextInt();
+        
+        if(km<0 || yas<0 ||(yolculukTipi!=(1)&&yolculukTipi!=(2))){
+        System.out.println("Hatalı Veri Girdiniz!");}
+ 
+        double ucret=km*(0.1);
+        System.out.println("İlk tutarınız: "+ucret);
+        
+        if(yas<12){
+        indirimliFiyat=ucret-(ucret/2);
+        System.out.println("indirimli fiyat: "+indirimliFiyat);
+        if(yolculukTipi==2){
+         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+            System.out.println("Toplam fiyat: "+ toplamFiyat);
+        }else{
+            System.out.println("Toplam fiyat: "+ indirimliFiyat);
+        }
+        }
+        if(yas>=12 && yas<=24){
+        indirimliFiyat=ucret-(ucret/10);
+        System.out.println("indirimli fiyat: "+indirimliFiyat);
+        if(yolculukTipi==2){
+         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+            System.out.println("Toplam fiyat: "+ toplamFiyat);
+        }else{
+            System.out.println("Toplam fiyat: "+ indirimliFiyat);
+        }
+        }
+        if(yas>65){
+        indirimliFiyat=ucret-(ucret*3/10);
+        System.out.println("indirimli fiyat: "+indirimliFiyat);
+        if(yolculukTipi==2){
+         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+            System.out.println("Toplam fiyat: "+ toplamFiyat);
+        }else{
+            System.out.println("Toplam fiyat: "+ indirimliFiyat);
+        }
+        }
+}}
