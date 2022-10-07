@@ -1,0 +1,31 @@
+package pkg12.ye.bölünen.sayıların.ortalaması;
+
+import java.util.Scanner;
+public class YeBölünenSayılarınOrtalaması {
+ 
+    public static void main(String[] args) {
+     
+        int sayi,
+            sayiMik=0,
+            toplam=0;
+        double ort=0;
+  
+        Scanner inp =new Scanner(System.in);
+        
+        System.out.print("Bir sayı giriniz: ");
+        sayi=inp.nextInt();
+        
+        for(int x=0;x<=sayi;x++){
+         if(x%12==0){
+      
+          sayiMik++;  
+          toplam += x;
+         }else{
+             continue;}
+         
+         ort=toplam/(sayiMik);
+         
+    }
+    System.out.println("0'dan girilen sayıya kadar olan sayılardan 3 ve 4'e tam bölünen sayıların ortalaması: "+ort);
+   
+}}
