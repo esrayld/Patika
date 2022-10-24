@@ -30,7 +30,7 @@ public class UçakBiletiHesaplama {
         indirimliFiyat=ucret-(ucret/2);
         System.out.println("indirimli fiyat: "+indirimliFiyat);
         if(yolculukTipi==2){
-         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+         toplamFiyat=indirimliFiyat-(indirimliFiyat - indirimliFiyat/5)*2;
             System.out.println("Toplam fiyat: "+ toplamFiyat);
         }else{
             System.out.println("Toplam fiyat: "+ indirimliFiyat);
@@ -40,7 +40,7 @@ public class UçakBiletiHesaplama {
         indirimliFiyat=ucret-(ucret/10);
         System.out.println("indirimli fiyat: "+indirimliFiyat);
         if(yolculukTipi==2){
-         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+         toplamFiyat=indirimliFiyat-(indirimliFiyat - indirimliFiyat/5)*2;
             System.out.println("Toplam fiyat: "+ toplamFiyat);
         }else{
             System.out.println("Toplam fiyat: "+ indirimliFiyat);
@@ -50,7 +50,7 @@ public class UçakBiletiHesaplama {
         indirimliFiyat=ucret-(ucret*3/10);
         System.out.println("indirimli fiyat: "+indirimliFiyat);
         if(yolculukTipi==2){
-         toplamFiyat=(indirimliFiyat - indirimliFiyat/5)*2;
+         toplamFiyat=indirimliFiyat-(indirimliFiyat - indirimliFiyat/5)*2;
             System.out.println("Toplam fiyat: "+ toplamFiyat);
         }else{
             System.out.println("Toplam fiyat: "+ indirimliFiyat);
