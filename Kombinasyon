@@ -1,0 +1,31 @@
+package kombinasyon;
+import java.util.Scanner;
+public class Kombinasyon {
+
+    public static void main(String[] args) {
+      
+        int n,r,t;
+        int total1=1, total2=1, total3=1;
+        Scanner inp= new Scanner(System.in);
+        
+        System.out.print("Kümenin kaç elemanlı olduğunu giriniz: ");
+        n=inp.nextInt();
+        System.out.print("KÜmenin kaç elemanlı farklı grubunun olduğunu giriniz: ");
+        r=inp.nextInt();
+       
+        for(int x=1;x<=n;x++){
+        total1*=x; 
+        }
+
+        for(int y=1;y<=r;y++){
+        total2*=y;
+        }
+      
+        for(int z=1;z<=(n-r);z++){
+        total3*=z;
+        }
+  
+        int kombinasyon=total1/(total2*total3);
+        System.out.println("Kombinasyon sonucu: "+kombinasyon);
+    }   
+}
