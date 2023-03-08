@@ -1,0 +1,21 @@
+package harmonik.sayılar;
+
+import java.util.Scanner;
+public class HarmonikSayılar {
+
+    public static void main(String[] args) {
+        
+        double toplam=0;
+        
+        Scanner key=new Scanner(System.in);
+        
+        System.out.println("N sayısını giriniz: ");
+        int n= key.nextInt();
+        
+        for(int i=1;i<=n;i++){
+        double formul=(1.0/i);
+        toplam+=formul;       
+        }
+        System.out.println(toplam);       
+    }    
+}
