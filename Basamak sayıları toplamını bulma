@@ -1,0 +1,21 @@
+package armstrong;
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String[] args) {
+  
+    Scanner keyboard= new Scanner(System.in);
+       int toplam =0; 
+       int sayilar;
+       System.out.println("Bir sayı giriniz: ");
+       int sayi=keyboard.nextInt();
+    
+    while(sayi!=0){
+    
+     sayilar= sayi%10;
+     toplam +=sayilar;   
+     sayi/=10;    
+    }
+    
+    System.out.println(toplam);   
+} 
+    }
